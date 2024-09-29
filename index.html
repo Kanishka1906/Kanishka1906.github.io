@@ -4,48 +4,233 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Primary Meta Tags -->
     <title>Kanishka Joshi - Portfolio</title>
-    <meta name="title" content="Kanishka Joshi" />
-    <meta name="description" content="A chapter to my story." />
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Kanishka Joshi - AI Enthusiast & Engineer" />
+    <meta name="description" content="Portfolio showcasing my projects in AI, ML, and computer vision." />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kanishka Joshi - AI Enthusiast & Engineer" />
+    <meta property="og:description" content="Portfolio showcasing my projects in AI, ML, and computer vision." />
+    <meta property="og:image" content="assets/og-image.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta
-      property="twitter:url"
-      content="https://github.com/kanishkajoshi/portfolio-html"
-    />
-    <meta property="twitter:title" content="Kanishka Joshi - Portfolio" />
-    <meta
-      property="twitter:description"
-      content="Explore Kanishka's projects in voice recognition and assistive tech!"
-    />
-    <meta
-      property="twitter:image"
-      content="https://user-images.githubusercontent.com/62628408/150613011-b78a7f5a-0af1-4312-aab0-0022e7258693.png"
-    />
+    <meta property="twitter:title" content="Kanishka Joshi - AI Enthusiast & Engineer" />
+    <meta property="twitter:description" content="Portfolio showcasing my projects in AI, ML, and computer vision." />
+    <meta property="twitter:image" content="assets/og-image.png" />
 
     <!-- Favicon Links -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/favicon/favicon-16x16.png"
-    />
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      crossorigin="anonymous"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
+
+    <style>
+      /* Internal custom styles for improving layout */
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      nav.navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #1d72b8;
+      }
+
+      nav h1 img {
+        width: 120px;
+      }
+
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+      }
+
+      .nav-menu li {
+        margin-left: 20px;
+      }
+
+      .nav-link {
+        color: white;
+        font-size: 1.1em;
+        text-transform: uppercase;
+        transition: color 0.3s ease;
+      }
+
+      .nav-link:hover {
+        color: #ffcd3c;
+      }
+
+      .theme-switch {
+        margin-left: 20px;
+      }
+
+      .header-container {
+        text-align: center;
+        padding: 100px 20px;
+        background: linear-gradient(135deg, #1d72b8, #6c63ff);
+        color: white;
+      }
+
+      .header-container h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+
+      .header-container h2 {
+        font-size: 1.8rem;
+      }
+
+      .header-container p {
+        margin: 20px auto;
+        max-width: 600px;
+        font-size: 1.2rem;
+      }
+
+      .profile-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+      /* Project Section */
+      #projects {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #fff;
+      }
+
+      #projects h2 {
+        color: #1d72b8;
+        font-size: 2.5rem;
+      }
+
+      #projects p {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+      }
+
+      .project {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        background-color: #f9f9f9;
+        margin: 10px;
+        padding: 20px;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .project-bio h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .project-bio p {
+        font-size: 1rem;
+      }
+
+      .project-link a {
+        font-size: 1.2rem;
+        color: #333;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        border-radius: 30px;
+        border: none;
+        background-color: #1d72b8;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #155a9a;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #1d72b8;
+        color: white;
+        text-align: center;
+        padding: 40px;
+      }
+
+      footer a {
+        color: #ffcd3c;
+        font-size: 1.1rem;
+      }
+
+      footer .social {
+        margin: 20px 0;
+      }
+
+      footer .social a {
+        margin: 0 10px;
+      }
+
+      footer img {
+        width: 30px;
+        height: 30px;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        nav .nav-menu {
+          display: none;
+        }
+
+        .hamburger {
+          display: block;
+          cursor: pointer;
+        }
+
+        .card {
+          width: 90%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        header h1 {
+          font-size: 2.2rem;
+        }
+
+        header p {
+          font-size: 1rem;
+        }
+      }
+    </style>
   </head>
+
   <body>
     <header id="hero">
       <!-- Navbar -->
@@ -53,30 +238,25 @@
         <div class="container">
           <!-- Logo -->
           <h1 id="logo">
-            <img src="./assets/logo.png" alt="Logo" />
+            <img src="./assets/logo.png" alt="Kanishka Joshi Logo" />
           </h1>
-          <!-- Navbar links -->
-          <ul class="nav-menu">
-            <li><a class="nav-link" href="#projects">PROJECTS</a></li>
-            <li><a class="nav-link" href="#footer">CONTACT</a></li>
-            <li>
-              <a
-                class="nav-link btn btn-primary"
-                href="./assets/res.pdf"
-                target="_blank"
-                >RESUME <i class="fas fa-arrow-right"></i
-              ></a>
-            </li>
 
-            <!-- Toggle switch -->
+          <!-- Navbar Links -->
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#footer">Contact</a></li>
+            <li><a class="nav-link btn" href="./assets/resume.pdf" target="_blank">Resume <i class="fas fa-arrow-right"></i></a></li>
+
+            <!-- Theme Switch -->
             <div class="theme-switch">
               <input type="checkbox" id="switch" />
               <label class="toggle-icons" for="switch">
-                <img class="sun" src="assets/sun.svg" />
-                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" alt="Sun Icon" />
+                <img class="moon" src="assets/moon.svg" alt="Moon Icon" />
               </label>
             </div>
           </ul>
+
           <div class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -86,87 +266,15 @@
       </nav>
 
       <section class="header-container">
-        <img
-          class="profile-image"
-          src="assets/biosvgpic.svg"
-          alt="Hi, it's me."
-        />
+        <img class="profile-image" src="assets/biosvgpic.svg" alt="Kanishka Joshi" />
         <h1>Hi, I'm Kanishka Joshi</h1>
-
-        <div class="content-text">
-          <h2>Shaping the Future with Technology</h2> 
-          <h2>One Project at a Time.</h2>
-
-          <p>
-            I'm passionate about AI and tech innovation. My work focuses on projects that blend voice recognition, assistive technology, and computer vision to make a real-world impact.
-          </p>
-        </div>
-        <a
-          href="#footer"
-          class="btn btn-secondary"
-          target="_blank"
-          >Connect With Me</a
-        >
+        <h2>Shaping the Future with Technology, One Project at a Time</h2>
+        <p>
+          I'm passionate about AI and tech innovation. My work focuses on projects that blend voice recognition, assistive technology, and computer vision to make a real-world impact.
+        </p>
+        <a href="#footer" class="btn">Connect With Me</a>
       </section>
     </header>
 
-    <!-- Projects -->
-    <section id="projects" class="project-container container">
-      <div class="division"></div>
-      <div class="content-text">
-        <h2>Projects</h2>
-        <p>Check out some of my key personal projects</p>
-      </div>
-
-      <article class="project">
-        <!-- Project 1 -->
-        <div class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Voice Activated Geo Assistant</h3>
-              <p>Voice Recognition, AI, Geo-Location Services</p>
-            </div>
-
-            <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Object Detection Glasses for Blind People</h3>
-              <p>Computer Vision, Assistive Tech, YOLO</p>
-            </div>
-
-            <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <a href="https://github.com/kanishkajoshi" class="btn btn-secondary"
-        target="_blank" >See More <i class="fas fa-arrow-right"></i
-      ></a>
-    </section>
-
-    <footer id="footer">
-      <div class="container">
-        <a href="mailto:kanishka.joshi@example.com">kanishka.joshi@example.com</a>
-        <!-- Social links -->
-        <div class="social">
-          <a href="https://www.instagram.com/kanishka._" target="_blank"><img src="./assets/hashnode-icon.svg" alt="Twitter" /></a>
-          <a href="https://www.linkedin.com/in/kanishka-joshi" target="_blank"
-            ><img src="./assets/linkedin-icon.svg" alt="Linkedin"
-          /></a>
-          <a href="https://github.com/kanishkajoshi" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
-        </div>
-        <p>Copyright &copy; Kanishka Joshi <span id="date"></span>, All rights reserved</p>
-      </div>
-    </footer>
-    <script src="js/script.js"></script>
-  </body>
-</html>
+    <!-- Projects Section -->
+    <section id="projects" class="
